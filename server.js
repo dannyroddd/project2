@@ -5,9 +5,10 @@ const express = require('express');
 const morgan = require("morgan")
 const methodOverride = require('method-override');
 const WorkoutRouter = require("./controllers/workouts")
-const app = express();
 const session = require("express-session")
 const MongoStore = require("connect-mongo")
+
+const app = express();
 
 app.use(morgan("tiny")) 
 app.use(methodOverride("_method")) 
@@ -20,12 +21,7 @@ app.use(session({
   resave: false
 }))
 app.use("/workouts", WorkoutRouter)
-
-
-
-
-
-
+app.use("/user", UserRouter)
 
 app.use(express.static('public'));
 
