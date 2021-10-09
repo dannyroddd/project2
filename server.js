@@ -6,6 +6,8 @@ const morgan = require("morgan")
 const methodOverride = require('method-override');
 const WorkoutRouter = require("./controllers/workouts")
 const app = express();
+const session = require("express-session")
+const MongoStore = require("connect-mongo")
 
 app.use(morgan("tiny")) 
 app.use(methodOverride("_method")) 

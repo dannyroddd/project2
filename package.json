@@ -22,7 +22,6 @@
   "homepage": "https://github.com/dannyroddd/project2#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "connect": "^3.7.0",
     "connect-mongo": "^4.6.0",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
