@@ -25,9 +25,6 @@ app.use("/workouts", WorkoutRouter)
 
 
 
-db.on('error', (err) => console.log(err.message + ' is mongod not running?'));
-db.on('connected', () => console.log('mongod connected: ', MONGODB_URI));
-db.on('disconnected', () => console.log('mongod disconnected'));
 
 
 app.use(express.static('public'));
