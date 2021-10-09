@@ -3,14 +3,14 @@ const mongoose = require('mongoose')
 
 
 
-const DATABASE_URL = process.env.DATABASE_URL
+const MONGODB_URI = process.env.MONGODB_URI
 const CONFIG = {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }
 
 
-mongoose.connect(DATABASE_URL, CONFIG)
+mongoose.connect(MONGODB_URI, CONFIG)
 
 mongoose.connection
 .on("open", ()=> console.log('connected to mongo'))
