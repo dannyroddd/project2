@@ -34,7 +34,7 @@ app.use(methodOverride('_method'));
 
 
 app.get('/' , (req, res) => {
-  res.send('Hello !');
+  res.render('index.ejs');
 });
 
 const PORT = process.env.PORT || 3000;
