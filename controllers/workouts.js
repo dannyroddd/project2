@@ -42,4 +42,22 @@ router.get('/', (req, res) => {
     })
     });
 
+    router.get("/new", (req, res) => {
+        res.render("workouts/new.ejs")
+    })
+
+    router.post("/", (req, res) => {
+       
+    
+  
+        req.body.username = req.session.username
+        req.body.img = "https://www.planetfitness.com/sites/default/files/feature-image/xbreak-workout_602724.jpg.pagespeed.ic.v8byD7su-e.jpg"
+        
+   
+        Workout.create(req.body, (err, workouts) => {
+           
+            res.redirect("/workouts")
+        })
+    })
+
 module.exports = router
