@@ -35,4 +35,11 @@ router.get("/seed", (req, res) => {
   })
 })
 
+// INDEX
+router.get('/', (req, res) => {
+    Workout.find({username: req.session.username}, (err, startWorkouts) => {
+        res.render("workouts/index.ejs", {data: startWorkouts})
+    })
+    });
+
 module.exports = router

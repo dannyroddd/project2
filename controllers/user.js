@@ -2,10 +2,10 @@ const express = require("express");
 const User = require("../models/user");
 const bcrypt = require("bcryptjs");
 
-//create the router 
+
 const router = express.Router()
 
-//Routes//The signup routes (GET => form, post => sub,it form)
+
 router.get("/signup", (req, res)=>{
     res.render("user/signup.ejs")
 })
@@ -40,7 +40,7 @@ router.post("/login", (req, res) => {
         if (result) {
             req.session.username = username
             req.session.loggedIn = true
-          res.redirect("/fruits");
+          res.redirect("/workouts");
         } else {
           res.send("wrong password");
         }
