@@ -3,6 +3,8 @@ const Workout = require("../models/workouts")
 
 const router = express.Router()
 
+
+
 router.use((req, res, next)=>{
     if (req.session.loggedIn){
         next()
@@ -11,36 +13,26 @@ router.use((req, res, next)=>{
     }
 })
 
-router.get("/seed", (req, res) => {
-    const startWorkouts = [
-        { name: "Push-ups", sets: 5, reps: 20, bodyPart:'Chest' , caloriesBurned:60},
-        { name: "Sit-Ups", sets: 5, reps: 20, bodyPart: 'Abdomen', caloriesBurned:30 },
-        { name: "Squats", sets: 5, reps: 20, bodyPart: 'Legs/Quads', caloriesBurned: 35},
-        { name: "Lunges (Per Leg)", sets: 5, reps: 20, bodyPart: 'Legs', caloriesBurned: 30},
-        { name: "Jumping Jacks", sets: 5, reps: 20, bodyPart: '', caloriesBurned: 20},
-        { name: "1 mile run", sets: 1, reps: 1, bodyPart: 'Full Body', caloriesBurned: 100},
-        { name: "Calf-Raises", sets: 4, reps: 50, bodyPart: 'Calves', caloriesBurned:31 },
-        { name: "Dips", sets: 5, reps: 20, bodyPart: 'Tricep', caloriesBurned: 60},
-        { name: "Dumbbell Bicep Curls", sets: 5, reps: 20, bodyPart: 'Bicep', caloriesBurned: 100},
-        { name: "Pull-Ups", sets: 5, reps: 5, bodyPart: 'Back', caloriesBurned: 25},
-      ];
 
-  
-  Workout.deleteMany({}, (err, data) => {
-      
-      Workout.create(startWorkouts, (err, data) => {
-        
-          res.json(data)
-      })
-  })
+router.get("/", async (req, res) => {
+    const workouts = await Workout.find({});
+    res.render("workouts/index.ejs", { workouts });
+  });
+
+  router.get("/:id/edit", (req, res) => {
+    const id = req.params.id
+    Workout.findById(id, (err, workout) => {
+        res.render("workouts/edit.ejs", {workout})
+    })
 })
 
-// INDEX
-router.get('/', (req, res) => {
-    Workout.find({username: req.session.username}, (err, startWorkouts) => {
-        res.render("workouts/index.ejs", {data: startWorkouts})
+router.put("/:id", (req, res) => {
+    const id = req.params.id
+   
+    Workout.findByIdAndUpdate(id, req.body, {new: true}, (err, workout) => {
+        res.redirect("/workouts")
     })
-    });
+})
 
     router.get("/new", (req, res) => {
         res.render("workouts/new.ejs")
@@ -51,7 +43,7 @@ router.get('/', (req, res) => {
     
   
         req.body.username = req.session.username
-        req.body.img = "https://www.planetfitness.com/sites/default/files/feature-image/xbreak-workout_602724.jpg.pagespeed.ic.v8byD7su-e.jpg"
+        req.body.img = "https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png"
         
    
         Workout.create(req.body, (err, workouts) => {
@@ -60,4 +52,20 @@ router.get('/', (req, res) => {
         })
     })
 
+    router.delete("/:id", (req, res) => {
+        const id = req.params.id
+        Workout.findByIdAndRemove(id, (err, workout) => {
+            res.redirect("/workouts")
+        })
+    })
+
+    router.get('/:id', (req, res) => {
+        const id = req.params.id
+        Workout.findById(id, (err, workout) => {
+            res.render("workouts/show.ejs", {workout})
+         })
+        });
+
 module.exports = router
+
+// res.render('show.ejs', { data: startWorkouts[req.params.id] });

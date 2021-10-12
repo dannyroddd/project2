@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div>
+          <form action="/workouts/<%= workout._id %>?_method=PUT"" method="post">
+            <fieldset>
+                <legend>Edit Workout</legend>
+              <label>
+                Workout name:<input
+                  type="text"
+                  name="name"
+                  placeholder="Workout Name"
+                />
+              </label>
+              <label>
+                Sets:<input
+                  type="number"
+                  name="sets"
+                  placeholder="enter number of sets"
+                />
+              </label>
+              <label>
+                Reps:<input
+                  type="number"
+                  name="reps"
+                  placeholder="enter number of reps"
+                />
+              </label>
+              <label>
+                  Calories Burned:<input type="number" name="caloriesBurned" />
+                </label>
+                <label>
+                    <img src="<%= workout.img%>" alt="" name="img">
+                  </label>
+            </fieldset>
+            <input type="submit" value="Edit Workout" />
+          </form>
+        </div>
+      </main>
+</body>
+</html>
