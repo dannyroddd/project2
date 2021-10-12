@@ -16,7 +16,7 @@ router.use((req, res, next)=>{
 
 router.get("/", async (req, res) => {
     const workouts = await Workout.find({});
-    res.render("workouts/index.ejs", { workouts });
+    res.render("workouts/index.ejs", { workouts});
   });
 
   router.get("/:id/edit", (req, res) => {
