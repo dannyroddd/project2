@@ -57,3 +57,12 @@ Heroku Link:
 10. https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/04/dumbbell-biceps-curl.jpg?itok=68gOG_AU
 <<<<<<< HEAD
 11. https://s3.amazonaws.com/prod.skimble/assets/1782011/skimble-workout-trainer-exercise-burpee-pull-ups-9_iphone.jpg!
+
+Screen Shot 2021-10-13 at 1.16.29 PM
+Screen Shot 2021-10-13 at 1.17.58 PM
+Screen Shot 2021-10-13 at 1.17.41 PM
+Screen Shot 2021-10-13 at 1.17.03 PM
+Screen Shot 2021-10-13 at 1.16.55 PM
+Screen Shot 2021-10-13 at 1.17.28 PM
+Screen Shot 2021-10-13 at 1.16.17 PM
+
