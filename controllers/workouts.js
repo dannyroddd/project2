@@ -9,7 +9,7 @@ router.use((req, res, next)=>{
     if (req.session.loggedIn){
         next()
     } else {
-        res.redirect("/index")
+        res.redirect("/views/index")
     }
 })
 
