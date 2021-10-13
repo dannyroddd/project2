@@ -64,5 +64,14 @@ Screen Shot 2021-10-13 at 1.17.41 PM
 Screen Shot 2021-10-13 at 1.17.03 PM
 Screen Shot 2021-10-13 at 1.16.55 PM
 Screen Shot 2021-10-13 at 1.17.28 PM
-Screen Shot 2021-10-13 at 1.16.17 PM
+Screen Shot 2021-10-13 at 1.16.17 PM![Screen Shot 2021-10-13 at 1 16 29 PM](https://user-images.githubusercontent.com/86563943/137199374-dab3b4e9-0b2b-4471-a40d-fa57ac339f67.png)![Screen Shot 2021-10-13 at 1 17 58 PM](https://user-images.githubusercontent.com/86563943/137199398-50d36400-637d-4196-aab1-669a180918e1.png)
+![Screen Shot 2021-10-13 at 1 17 41 PM](https://user-images.githubusercontent.com/86563943/137199413-daa073f6-7f68-44d3-ae4d-efa1276ef9bd.png)
+
+
+![Screen Shot 2021-10-13 at 1 17 03 PM](https://user-images.githubusercontent.com/86563943/137199431-0533e375-b564-486e-9a00-55d134d39743.png)
+![Screen Shot 2021-10-13 at 1 17 03 PM](https://user-images.githubusercontent.com/86563943/137199440-1b2ba1f9-7024-445d-b38c-a50699593b77.png)
+![Screen Shot 2021-10-13 at 1 16 55 PM]![Screen Shot 2021-10-13 at 1 17 28 PM](https://user-images.githubusercontent.com/86563943/137199460-c69075a9-c75c-4144-8cb9-4f28a8360245.png)
+(https://user-images.githubusercontent.com/86563943/137199449-2f42d33c-c7f3-415e-a8fb-8b3a4df985![Screen Shot 2021-10-13 at 1 17 28 PM](https://user-images.githubusercontent.com/86563943/137199468-7e84c1dc-5e64-48d0-a4a9-8e88dc1ae275.png)
+6a.p![Screen Shot 2021-10-13 at 1 16 17 PM](https://user-images.githubusercontent.com/86563943/137199483-3f100d25-91c6-405f-b330-1b8e02b0b40b.png)
+ng)
 
