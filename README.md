@@ -55,4 +55,10 @@ Heroku Link:
 8. https://i1.wp.com/bootcampmilitaryfitnessinstitute.com/wp-content/uploads/2018/02/Exercise-Calf-Raises-1.jpg?ssl=1
 9. https://media3.popsugar-assets.com/files/thumbor/wdgNrfin9tJHa2PwJOlMiljJdws/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2015/09/25/939/n/1922398/1a467384_Tricep-Dips.jpg
 10. https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/04/dumbbell-biceps-curl.jpg?itok=68gOG_AU
-11. https://s3.amazonaws.com/prod.skimble/assets/1782011/skimble-workout-trainer-exercise-burpee-pull-ups-9_iphone.jpg
+11. https://s3.amazonaws.com/prod.skimble/assets/1782011/skimble-workout-trainer-exercise-burpee-pull-ups-9_iphone.jpg![Screen Shot 2021-10-13 at 1 16 29 PM](https://user-images.githubusercontent.com/86563943/137182073-c8301ac0-f5bd-4582-aa95-31e12b025409.png)
+![Screen Shot 2021-1![Screen Shot 2021-10-13 at 1 16 55 PM](https://user-images.githubusercontent.com/86563943/137182225-9349a015-bc47-4ed3-9421-071908e4c53c.png)![Screen Shot 20![Screen Shot 2021-10-13 at 1 17 58 PM](https://user-images.githubusercontent.com/86563943/137182259-cfbc1a2b-6e54-426c-bad9-eae1ead16c2d.png)
+21-10-13 at 1 17 03 PM](https://user-images.githubusercontent.com/86563943/137182245-505eb590-6666-4403-9248-cbd2a5addb77.png)
+
+0-13 at 1 16 17 PM](https://user-images.githubusercontent.com/86563943/137182179-a33d695f-57fe-4bc4-b57b-0dc86af260d8.png)
+![Screen Shot 2021-10-13 at 1 17 28 PM](https://user-images.githubusercontent.com/86563943/137182268-cbc0f206-44f9-429d-aa67-c6643e74d0fd.png)
+![Screen Shot 2021-10-13 at 1 17 41 PM](https://user-images.githubusercontent.com/86563943/137182286-3af0172f-0626-4a1c-baf4-50d7f3b01358.png)
