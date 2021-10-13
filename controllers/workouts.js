@@ -9,15 +9,15 @@ router.use((req, res, next)=>{
     if (req.session.loggedIn){
         next()
     } else {
-        res.redirect("/views/index")
+        res.redirect("/user/login")
     }
 })
 
 
 router.get("/", async (req, res) => {
-    const workouts = await Workout.find({});
-    res.render("workouts/index.ejs", { workouts});
-  });
+    const workouts = await Workout.find({username: req.session.username}, (err, workout) => {
+    res.render("workouts/index.ejs", {workout, workouts})
+    })});
 
   router.get("/:id/edit", (req, res) => {
     const id = req.params.id
