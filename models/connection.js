@@ -1,15 +1,16 @@
+//dependencies
 require('dotenv').config()
 const mongoose = require('mongoose')
 
 
-
+//database connection 
 const MONGODB_URI = process.env.MONGODB_URI
 const CONFIG = {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }
 
-
+//connect 
 mongoose.connect(MONGODB_URI, CONFIG)
 
 mongoose.connection
@@ -18,5 +19,5 @@ mongoose.connection
 .on("error", ()=> console.log(error))
 
 
-
+//export mongoose connection
 module.exports = mongoose

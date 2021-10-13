@@ -1,10 +1,12 @@
+//dependencies
 const express = require("express")
 const Workout = require("../models/workouts")
 
+//router
 const router = express.Router()
 
 
-
+//router middleware
 router.use((req, res, next)=>{
     if (req.session.loggedIn){
         next()
@@ -13,12 +15,14 @@ router.use((req, res, next)=>{
     }
 })
 
-
+//routes
+//get the starter data for index route
 router.get("/", async (req, res) => {
     const workouts = await Workout.find({});
     res.render("workouts/index.ejs", { workouts});
   });
 
+  //edit route
   router.get("/:id/edit", (req, res) => {
     const id = req.params.id
     Workout.findById(id, (err, workout) => {
@@ -26,6 +30,7 @@ router.get("/", async (req, res) => {
     })
 })
 
+//update edited workout
 router.put("/:id", (req, res) => {
     const id = req.params.id
    
@@ -34,10 +39,12 @@ router.put("/:id", (req, res) => {
     })
 })
 
+//new route
     router.get("/new", (req, res) => {
         res.render("workouts/new.ejs")
     })
 
+    //post new workout
     router.post("/", (req, res) => {
        
     
@@ -52,6 +59,7 @@ router.put("/:id", (req, res) => {
         })
     })
 
+    //delete route - delete workout
     router.delete("/:id", (req, res) => {
         const id = req.params.id
         Workout.findByIdAndRemove(id, (err, workout) => {
@@ -59,6 +67,7 @@ router.put("/:id", (req, res) => {
         })
     })
 
+    //show route - show workout info
     router.get('/:id', (req, res) => {
         const id = req.params.id
         Workout.findById(id, (err, workout) => {
@@ -66,6 +75,5 @@ router.put("/:id", (req, res) => {
          })
         });
 
+        //export router
 module.exports = router
-
-// res.render('show.ejs', { data: startWorkouts[req.params.id] });

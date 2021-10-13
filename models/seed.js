@@ -1,10 +1,11 @@
-
+//dependencies 
 const mongoose = require("./connection")
 const Workout = require("./workouts")
 
+//seed code
 mongoose.connection.on("open", ()=>{
 
-   
+   //starter data
     const startWorkouts = [
         { name: "Push-ups", img:'https://images.pexels.com/photos/176782/pexels-photo-176782.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', sets: 5, reps: 20, bodyPart:'Chest' , caloriesBurned:60},
         { name: "Sit-Ups",img: 'https://www.inposture.com/wp-content/uploads/2020/05/Sit-ups.jpg', sets: 5, reps: 20, bodyPart: 'Abdomen', caloriesBurned:30 },
@@ -21,7 +22,7 @@ mongoose.connection.on("open", ()=>{
      
       Workout.deleteMany({}, (err, data)=>{
           
-        
+        //seed after deleting during request 
         Workout.create(startWorkouts, (err, data)=>{
             console.log("-Workouts CREATED-")
             console.log(data)

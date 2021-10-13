@@ -1,5 +1,7 @@
+//import mongoose connection
 const mongoose = require('./connection')
 
+//Schema model 
 const {Schema, model} = mongoose
 
 const workoutSchema = new Schema({
@@ -13,4 +15,6 @@ const workoutSchema = new Schema({
 
 const Workout = model("Workout", workoutSchema)
 
+
+//export schema
 module.exports = Workout
