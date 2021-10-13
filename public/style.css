@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
 body{
    background-color: silver;
 }
@@ -32,33 +34,6 @@ nav{
     text-align: center;
 }
 
-.add{
-    background-color: lightskyblue;
-    border: 3px solid white;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-    height: 40px;
-    width: 220px;
-    font-size: 1em;
-}
-
-nav :hover{
-    height: 45px;
-    width: 225px;
-    font-size: 1.1em;
-
-}
-
-.name{
-    background-color: white;
-    color: teal;
-    border: 3px solid black;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-    height: 40px;
-    width: 180px;
-    font-size: 1em;
-}
 
 img{
     width: 300px;
@@ -66,3 +41,104 @@ img{
     border: 3px solid black;
     border-radius: 10px;
 }
+
+.stats{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.stats{
+    padding-bottom: 1%;
+}
+
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    background-color: #5ca1e1;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    padding: 16px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 36px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  }
+  
+  button{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  button:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+  button:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
+  #day{
+      width: 60px;
+      height: 60px;
+      font-size: 2em;
+      text-align: center;
+      border-radius: 10px;
+  }
+
+  main{
+      text-align: center;
+      padding-top: 10%;
+    }
+
+   legend{
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 3em;
+   }
+
+   label{
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 1.5em;
+   }
+
+   .index{
+       background-image: url("https://t4.ftcdn.net/jpg/02/08/13/53/360_F_208135384_P3gpf2RVbAMvTcYo5LGK9gq98PZLNfcc.jpg");
+       background-size: 100%;   }
+   
+       .new{
+        background-image: url("https://t4.ftcdn.net/jpg/02/08/13/53/360_F_208135384_P3gpf2RVbAMvTcYo5LGK9gq98PZLNfcc.jpg");
+        background-size: 100%;   }
+   
+        .edit{
+            background-image: url("https://t4.ftcdn.net/jpg/02/08/13/53/360_F_208135384_P3gpf2RVbAMvTcYo5LGK9gq98PZLNfcc.jpg");
+            background-size: 100%;   }
+           
+            .show{
+                background-image: url("https://t4.ftcdn.net/jpg/02/08/13/53/360_F_208135384_P3gpf2RVbAMvTcYo5LGK9gq98PZLNfcc.jpg");
+                background-size: 100%;   }
+                .login{
+                    background-image: url("https://t4.ftcdn.net/jpg/02/08/13/53/360_F_208135384_P3gpf2RVbAMvTcYo5LGK9gq98PZLNfcc.jpg");
+                    background-size: 100%;   }
+                    .signup{
+                        background-image: url("https://t4.ftcdn.net/jpg/02/08/13/53/360_F_208135384_P3gpf2RVbAMvTcYo5LGK9gq98PZLNfcc.jpg");
+                        background-size: 100%;   }
+                
+            
+        

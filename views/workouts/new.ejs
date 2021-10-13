@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <%- include("../partials/head.ejs")%>
+<body class="new">
+    <%- include("../partials/header.ejs") %>
     <main>
         <div>
         <form action="/workouts" method="post">
@@ -18,7 +14,7 @@
           <label>Reps: <input type="number" name="reps" placeholder="Enter Number of Reps"></label>
           <label>Body Part: <input type="text" name="bodyPart" placeholder="Enter Body Part"></label>
           <label>Calories Burned: <input type="number" name="caloriesBurned" placeholder="Enter Calories Burned"></label>
-          <label> <img src="https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png" name="img" ></label>
+          <label > <img src="https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png" name="img" class="new image"></label>
         
   
           <input type="submit" value="Add New Workout">
